@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FamilyBridge Onboarding</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#A0C4FF",
+            "accent": "#FFDDC1",
+            "text-dark": "#333333",
+            "background-light": "#F8F9FA",
+            "background-dark": "#101c22", // A sample dark mode background
+          },
+          fontFamily: {
+            "display": ["Inter", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+        font-family: 'Inter', sans-serif;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark">
+<div class="relative flex h-screen min-h-[800px] w-full flex-col group/design-root overflow-hidden">
+<div class="flex-grow flex flex-col justify-between p-6">
+<div class="flex-shrink-0">
+<!-- Placeholder for status bar -->
+</div>
+<div class="flex-grow flex flex-col justify-center items-center text-center px-4">
+<div class="@container">
+<div class="@[480px]:px-4 @[480px]:py-3">
+<div class="w-full bg-center bg-no-repeat bg-cover flex flex-col justify-end overflow-hidden rounded-xl min-h-80" data-alt="A tender illustration of a multi-generational family interacting happily over a video call." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAR7CSSbbHBw8DClQFouFOK03DXlXTEaMGgaETLByQLF-fy1WMRvCxC8wh1VGF7Kqp75qxyh1OahF9kODqtiE5LESY_hAm1UxVJ0ADoMibLS8RsLXgmM50oITBMtgggBG-GKc72_pkQjjhdLCLAcwTGWPJW-cu0GfutXdZNs3UiRHKHPJmq2IwB4xxgbtiGH3bf2M1_bLHn2RnDbfXY1e4-9c7e3ObjzYNM0mHn_sbofUkZXOQvf8KUveY6X7C6dwQ6BOUW2hYfJdo");'></div>
+</div>
+</div>
+<h1 class="text-text-dark dark:text-white tracking-light text-[24px] font-bold leading-tight pt-8 pb-3 font-display">Stay Close to Family, Effortlessly.</h1>
+<p class="text-text-dark dark:text-white text-lg font-normal leading-normal pb-3 pt-1 font-display">Share moments and feel connected, no matter the distance.</p>
+</div>
+<div class="flex-shrink-0">
+<div class="flex w-full flex-row items-center justify-center gap-3 py-5">
+<div class="h-2 w-2 rounded-full bg-gray-300"></div>
+<div class="h-2.5 w-2.5 rounded-full bg-accent"></div>
+<div class="h-2 w-2 rounded-full bg-gray-300"></div>
+</div>
+<div class="flex px-4 py-3">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-14 px-5 flex-1 bg-primary text-text-dark text-lg font-bold leading-normal tracking-[0.015em] font-display">
+<span class="truncate">Next</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</body></html>

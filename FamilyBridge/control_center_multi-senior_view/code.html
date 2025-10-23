@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FamilyBridge Control Center</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#4A90E2",
+                        "background-light": "#F5F5F7",
+                        "background-dark": "#101c22",
+                        "card-background": "#FFFFFF",
+                        "text-primary": "#333333",
+                        "status-ok": "#2ECC71",
+                        "status-attention": "#F1C40F",
+                        "status-alert": "#E74C3C"
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<header class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-10 border-b border-gray-200 dark:border-gray-700">
+<h1 class="text-text-primary dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1">My Family</h1>
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 bg-transparent text-text-primary dark:text-white gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0">
+<span class="material-symbols-outlined text-text-primary dark:text-white">settings</span>
+</button>
+</header>
+<main class="flex-grow p-4 space-y-4">
+<div class="flex items-center gap-4 bg-card-background dark:bg-background-dark p-4 rounded-xl shadow-sm cursor-pointer">
+<div class="relative">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-16 w-16" data-alt="Photo of Grandma Jean" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAD91QEm9pGYv3tuyodlzkZ4g9eq5KK__72_c5FKvGAN9THuwrrHbA_eLA1-ecZfh_4TlUIKOBwngWQOAgAXvDEigy1cB7yo0JI_2mRYGZ-s3ktPT7yi3dAQCkTLmj-9bW33e8epx9A37AWKLsa-6O6ZTKu7euwOwxTedAG4Ay85-5pyTuTW1A3ihwTHFddynI3i2Sn5iIOzAjaTPOlLv_UbTLZm4iuzNhSowwbBmneDOnB3Cb03YQ2nHGpYFRN3VN3D0pNZhvsFts");'></div>
+<div class="absolute bottom-0 right-0 w-4 h-4 bg-status-ok rounded-full border-2 border-card-background dark:border-background-dark"></div>
+</div>
+<div class="flex-grow flex flex-col justify-center">
+<p class="text-text-primary dark:text-gray-200 text-lg font-medium leading-normal line-clamp-1">Grandma Jean</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal line-clamp-2">Morning check-in: 9:15 AM</p>
+</div>
+<div class="shrink-0">
+<span class="material-symbols-outlined text-gray-400 dark:text-gray-500 text-3xl">chevron_right</span>
+</div>
+</div>
+<div class="flex items-center gap-4 bg-card-background dark:bg-background-dark p-4 rounded-xl shadow-sm cursor-pointer">
+<div class="relative">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-16 w-16" data-alt="Photo of Grandpa Bill" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCFbvkCGR2vIy3sd0qAn1AUuZD3SW_MgRLmv9f_Op1afT3E_ZB7au2GU-uEy1jCpSr7hIEXooSOfvIpkRKnxOsQDGga5mQDTDbAPxIvqqSqJVyLeHzTRChted8_Vj4Mm8iyTgkdcdaEENBiaOEbc8b_-Ob_QFTxhoxdrfBwAN0Q8ga1jmgpxtTplZy9T5wZKa2maaGkJFSAi3uPHNZnbq-3L68lgmC1GQfNGWiPnJhiRxlchjlr4jV7sfn5Vehv95dkPbmLKC1T7TY");'></div>
+<div class="absolute bottom-0 right-0 w-4 h-4 bg-status-attention rounded-full border-2 border-card-background dark:border-background-dark"></div>
+</div>
+<div class="flex-grow flex flex-col justify-center">
+<p class="text-text-primary dark:text-gray-200 text-lg font-medium leading-normal line-clamp-1">Grandpa Bill</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal line-clamp-2">Medication reminder sent</p>
+</div>
+<div class="shrink-0">
+<span class="material-symbols-outlined text-gray-400 dark:text-gray-500 text-3xl">chevron_right</span>
+</div>
+</div>
+<!-- Empty State Example (commented out)
+            <div class="flex flex-col items-center justify-center text-center p-10 bg-card-background dark:bg-background-dark rounded-xl shadow-sm">
+                <span class="material-symbols-outlined text-6xl text-gray-300 dark:text-gray-600 mb-4">group_add</span>
+                <h3 class="text-text-primary dark:text-white text-lg font-semibold mb-2">Add a family member</h3>
+                <p class="text-gray-500 dark:text-gray-400 max-w-xs">It looks like you haven't added any seniors yet. Tap the '+' button to get started.</p>
+            </div>
+             -->
+</main>
+<div class="fixed bottom-6 right-6">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-16 w-16 bg-primary text-white shadow-lg hover:bg-blue-500 transition-colors">
+<span class="material-symbols-outlined text-3xl">add</span>
+</button>
+</div>
+</div>
+</body></html>

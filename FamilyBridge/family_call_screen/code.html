@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FamilyBridge Video Call</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#13a4ec",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101c22",
+          },
+          fontFamily: {
+            "display": ["Inter", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-screen w-full flex-col group/design-root overflow-hidden">
+<!-- Main Video Feed -->
+<div class="absolute inset-0 w-full h-full bg-center bg-no-repeat bg-cover" data-alt="A smiling woman with blonde hair, presumably Sarah, on a video call." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD9zJGIoZRNddKTVmQDpLEcdDYuFy8msrTZFXHcnDAl0ndVqRUinFAc--GqE_R-BFP11DfdvRsmiz11IrJF3MttH0Qwyg_ESEBcneTzrGvNVZQOokFbEnNeHA-6V4CJYHb43D8dn8CIfsar48JI5OPSPn5IBzbgAGDfvLvUCGaEl9ixTRJoKMc5WYDPdEC7xM5Mqz5BQRoS8ZvAOzzHWeyC1EWX4XRW87C3hSimeGneS78z9uACPfrrS2KIZe0OvX1Q5Jhs5c5bLyc");'>
+</div>
+<!-- UI Overlay -->
+<div class="relative z-10 flex flex-col h-full">
+<!-- Top Bar -->
+<div class="flex items-center p-4 bg-black/20 backdrop-blur-sm">
+<h2 class="text-white text-xl font-bold leading-tight tracking-[-0.015em] flex-1 text-center font-display">Talking with Sarah</h2>
+</div>
+<!-- Main Content Area -->
+<div class="flex-grow">
+<!-- Self-View Thumbnail -->
+<div class="absolute top-24 right-4 w-32 h-48 rounded-xl overflow-hidden border-2 border-white/50 shadow-lg">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover" data-alt="A man with short brown hair smiling, representing the user's view." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD845iSU6trMH53lNNXMXAhELbR3IIsJSz2x2UeKvjhRPHFbBzwqh60QKi7rGasnxJRSBoXwKeIhqDIpYzAyXS_t-l269_nXRCmifUMf8kTDk2-1e4kSGd-fIeogY4rnLDWTrR_pq-843bqe-mVaPhXgZf5-qHC5zH9QrRtBTb_NxO-C-rcZK5uOfusvlmKBugVcH3yCHPiOkw0A2krGAlbEN8aeqb2oWrxLHT7WIYEbPGZ9s9ajA0jBv0EfZDL_y9X53eLyZNa4-w");'></div>
+</div>
+</div>
+<!-- Control Bar -->
+<div class="px-4 py-6 bg-black/20 backdrop-blur-sm">
+<div class="flex justify-center items-center gap-8">
+<button class="flex flex-col items-center gap-2 text-white p-3 bg-white/20 rounded-full">
+<span class="material-symbols-outlined text-4xl">mic_off</span>
+<span class="text-xs font-medium">Mute</span>
+</button>
+<button class="flex flex-col items-center gap-2 text-white p-3 bg-white/20 rounded-full">
+<span class="material-symbols-outlined text-4xl">volume_up</span>
+<span class="text-xs font-medium">Speaker</span>
+</button>
+<button class="flex flex-col items-center gap-2 text-white p-5 bg-red-500 rounded-full scale-110 shadow-lg">
+<span class="material-symbols-outlined text-5xl">call_end</span>
+<span class="text-sm font-semibold">End</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</body></html>

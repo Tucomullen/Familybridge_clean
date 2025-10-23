@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FamilyBridge - Event Timeline</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#A0C4FF",
+            "secondary": "#FFADAD",
+            "background-light": "#FAF9F6",
+            "background-dark": "#101c22",
+            "text-light": "#333333",
+            "text-dark": "#E5E7EB",
+            "subtext-light": "#6B7280",
+            "subtext-dark": "#9CA3AF",
+            "chip-light": "#F0F0F0",
+            "chip-dark": "#2D3748"
+          },
+          fontFamily: {
+            display: ["Inter", "sans-serif"],
+          },
+          borderRadius: {
+            "DEFAULT": "0.75rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<!-- Top App Bar -->
+<div class="sticky top-0 z-10 flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between border-b border-chip-light dark:border-chip-dark">
+<div class="flex size-12 shrink-0 items-center justify-center">
+<span class="material-symbols-outlined text-text-light dark:text-text-dark">arrow_back</span>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Event Timeline</h2>
+<div class="flex size-12 shrink-0 items-center"></div>
+</div>
+<!-- Filter Chips -->
+<div class="flex gap-3 p-4 overflow-x-auto">
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary pl-4 pr-4">
+<p class="text-white text-sm font-medium leading-normal">All</p>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-chip-light dark:bg-chip-dark pl-4 pr-4">
+<p class="text-text-light dark:text-text-dark text-sm font-medium leading-normal">Calls</p>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-chip-light dark:bg-chip-dark pl-4 pr-4">
+<p class="text-text-light dark:text-text-dark text-sm font-medium leading-normal">Messages</p>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-chip-light dark:bg-chip-dark pl-4 pr-4">
+<p class="text-text-light dark:text-text-dark text-sm font-medium leading-normal">SOS</p>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-chip-light dark:bg-chip-dark pl-4 pr-4">
+<p class="text-text-light dark:text-text-dark text-sm font-medium leading-normal">Photos</p>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-chip-light dark:bg-chip-dark pl-4 pr-2">
+<p class="text-text-light dark:text-text-dark text-sm font-medium leading-normal">Date</p>
+<span class="material-symbols-outlined text-text-light dark:text-text-dark">calendar_today</span>
+</button>
+</div>
+<!-- Timeline Feed -->
+<div class="flex flex-col space-y-4 p-4">
+<!-- Date Separator -->
+<h4 class="text-subtext-light dark:text-subtext-dark text-sm font-bold leading-normal tracking-[0.015em] text-center">Today</h4>
+<!-- Event Card - SOS -->
+<div class="flex items-center gap-4 bg-background-light dark:bg-background-dark p-4 rounded-lg shadow-sm border border-secondary dark:border-secondary/50">
+<div class="text-white flex items-center justify-center rounded-full bg-secondary shrink-0 size-12">
+<span class="material-symbols-outlined">sos</span>
+</div>
+<div class="flex flex-col justify-center flex-1">
+<p class="text-base font-semibold leading-normal line-clamp-1 text-secondary">SOS Alert Triggered</p>
+<p class="text-subtext-light dark:text-subtext-dark text-sm font-normal leading-normal line-clamp-2">Location: 123 Maple St</p>
+</div>
+<div class="shrink-0"><p class="text-subtext-light dark:text-subtext-dark text-sm font-normal leading-normal">11:05 AM</p></div>
+</div>
+<!-- Event Card - Call -->
+<div class="flex items-center gap-4 bg-background-light dark:bg-background-dark p-4 rounded-lg shadow-sm border border-chip-light dark:border-chip-dark">
+<div class="text-text-light dark:text-text-dark flex items-center justify-center rounded-full bg-chip-light dark:bg-chip-dark shrink-0 size-12">
+<span class="material-symbols-outlined">call_made</span>
+</div>
+<div class="flex flex-col justify-center flex-1">
+<p class="text-text-light dark:text-text-dark text-base font-medium leading-normal line-clamp-1">Outgoing Call</p>
+<p class="text-subtext-light dark:text-subtext-dark text-sm font-normal leading-normal line-clamp-2">John Doe</p>
+</div>
+<div class="shrink-0"><p class="text-subtext-light dark:text-subtext-dark text-sm font-normal leading-normal">10:42 AM</p></div>
+</div>
+<!-- Event Card - Photo -->
+<div class="flex items-center gap-4 bg-background-light dark:bg-background-dark p-4 rounded-lg shadow-sm border border-chip-light dark:border-chip-dark">
+<div class="text-text-light dark:text-text-dark flex items-center justify-center rounded-full bg-chip-light dark:bg-chip-dark shrink-0 size-12">
+<span class="material-symbols-outlined">photo_camera</span>
+</div>
+<div class="flex flex-col justify-center flex-1">
+<p class="text-text-light dark:text-text-dark text-base font-medium leading-normal line-clamp-1">Photo Shared</p>
+<p class="text-subtext-light dark:text-subtext-dark text-sm font-normal leading-normal line-clamp-2">With Jane Doe</p>
+</div>
+<div class="shrink-0"><p class="text-subtext-light dark:text-subtext-dark text-sm font-normal leading-normal">9:30 AM</p></div>
+</div>
+<!-- Event Card - Message -->
+<div class="flex items-center gap-4 bg-background-light dark:bg-background-dark p-4 rounded-lg shadow-sm border border-chip-light dark:border-chip-dark">
+<div class="text-text-light dark:text-text-dark flex items-center justify-center rounded-full bg-chip-light dark:bg-chip-dark shrink-0 size-12">
+<span class="material-symbols-outlined">chat</span>
+</div>
+<div class="flex flex-col justify-center flex-1">
+<p class="text-text-light dark:text-text-dark text-base font-medium leading-normal line-clamp-1">New Message</p>
+<p class="text-subtext-light dark:text-subtext-dark text-sm font-normal leading-normal line-clamp-2">From Jane Doe</p>
+</div>
+<div class="shrink-0"><p class="text-subtext-light dark:text-subtext-dark text-sm font-normal leading-normal">9:15 AM</p></div>
+</div>
+<!-- Date Separator -->
+<h4 class="text-subtext-light dark:text-subtext-dark text-sm font-bold leading-normal tracking-[0.015em] pt-4 text-center">Yesterday</h4>
+<!-- Event Card - Call -->
+<div class="flex items-center gap-4 bg-background-light dark:bg-background-dark p-4 rounded-lg shadow-sm border border-chip-light dark:border-chip-dark">
+<div class="text-text-light dark:text-text-dark flex items-center justify-center rounded-full bg-chip-light dark:bg-chip-dark shrink-0 size-12">
+<span class="material-symbols-outlined">call_received</span>
+</div>
+<div class="flex flex-col justify-center flex-1">
+<p class="text-text-light dark:text-text-dark text-base font-medium leading-normal line-clamp-1">Incoming Call</p>
+<p class="text-subtext-light dark:text-subtext-dark text-sm font-normal leading-normal line-clamp-2">Dr. Smith</p>
+</div>
+<div class="shrink-0"><p class="text-subtext-light dark:text-subtext-dark text-sm font-normal leading-normal">June 15, 3:20 PM</p></div>
+</div>
+</div>
+<!-- Empty State Example -->
+<!-- 
+    <div class="flex flex-col items-center justify-center text-center p-10 mt-10">
+      <span class="material-symbols-outlined text-7xl text-subtext-light dark:text-subtext-dark opacity-50">event_busy</span>
+      <h3 class="text-xl font-semibold mt-4 text-text-light dark:text-text-dark">No Events Yet</h3>
+      <p class="text-subtext-light dark:text-subtext-dark mt-2">When there's new activity, it will show up here.</p>
+    </div> 
+    -->
+</div>
+</body></html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FamilyBridge Control Center - Home Screen Builder</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13a4ec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101c22",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<!-- Top App Bar -->
+<div class="flex items-center bg-white dark:bg-background-dark p-4 pb-2 justify-between">
+<div class="text-[#111618] dark:text-white flex size-12 shrink-0 items-center">
+<span class="material-symbols-outlined text-2xl">arrow_back_ios_new</span>
+</div>
+<h1 class="text-[#111618] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Home Screen Builder</h1>
+<div class="flex w-12 items-center justify-end">
+<button class="text-primary text-base font-bold leading-normal tracking-[0.015em] shrink-0">Save</button>
+</div>
+</div>
+<!-- Body Text -->
+<p class="text-[#617c89] dark:text-gray-400 text-base font-normal leading-normal px-4 text-center">Drag and drop to arrange the home screen.</p>
+<!-- Live Preview / Drop Zone -->
+<div class="p-4 mt-4">
+<div class="flex flex-col items-center gap-6 rounded-xl border-2 border-dashed border-primary/50 bg-primary/10 dark:bg-primary/20 px-6 py-14">
+<div class="flex max-w-[480px] flex-col items-center gap-2">
+<p class="text-[#111618] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] max-w-[480px] text-center">Senior's Home Screen</p>
+<div class="grid grid-cols-2 gap-4 mt-4">
+<div class="flex flex-col items-center gap-2 p-4 rounded-xl bg-white dark:bg-background-dark shadow-md">
+<span class="material-symbols-outlined text-3xl text-green-500">call</span>
+<span class="text-[#111618] dark:text-white text-sm font-bold">Call</span>
+</div>
+<div class="flex flex-col items-center gap-2 p-4 rounded-xl bg-white dark:bg-background-dark shadow-md">
+<span class="material-symbols-outlined text-3xl text-red-500">sos</span>
+<span class="text-[#111618] dark:text-white text-sm font-bold">SOS</span>
+</div>
+<div class="flex flex-col items-center gap-2 p-4 rounded-xl bg-white dark:bg-background-dark shadow-md">
+<span class="material-symbols-outlined text-3xl text-blue-500">photo_library</span>
+<span class="text-[#111618] dark:text-white text-sm font-bold">Photos</span>
+</div>
+<div class="flex flex-col items-center justify-center gap-2 p-4 rounded-xl border-2 border-dashed border-[#dbe2e6] dark:border-gray-600">
+<span class="text-[#111618]/50 dark:text-white/50 text-sm font-normal">Add Widget</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Empty State Example (commented out, for reference) -->
+<!--
+    <div class="p-4 mt-4">
+        <div class="flex flex-col items-center gap-6 rounded-xl border-2 border-dashed border-[#dbe2e6] dark:border-gray-700 px-6 py-14">
+            <div class="flex max-w-[480px] flex-col items-center gap-2">
+                <p class="text-[#111618] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">Senior's Home Screen</p>
+                <p class="text-[#617c89] dark:text-gray-400 text-sm font-normal leading-normal text-center">Drag your first widget here</p>
+            </div>
+        </div>
+    </div>
+    -->
+<!-- Section Header -->
+<h3 class="text-[#111618] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-6">Available Widgets</h3>
+<!-- Widget Palette -->
+<div class="grid grid-cols-[repeat(auto-fit,minmax(150px,1fr))] gap-3 p-4">
+<div class="flex flex-1 gap-3 rounded-xl border border-[#dbe2e6] dark:border-gray-700 bg-white dark:bg-background-dark p-4 items-center cursor-grab shadow-sm">
+<span class="material-symbols-outlined text-2xl text-blue-500">chat_bubble</span>
+<h2 class="text-[#111618] dark:text-white text-base font-bold leading-tight">Messages</h2>
+</div>
+<div class="flex flex-1 gap-3 rounded-xl border border-[#dbe2e6] dark:border-gray-700 bg-white dark:bg-background-dark p-4 items-center cursor-grab shadow-sm">
+<span class="material-symbols-outlined text-2xl text-orange-500">wb_sunny</span>
+<h2 class="text-[#111618] dark:text-white text-base font-bold leading-tight">Weather</h2>
+</div>
+<div class="flex flex-1 gap-3 rounded-xl border border-[#dbe2e6] dark:border-gray-700 bg-white dark:bg-background-dark p-4 items-center cursor-grab shadow-sm">
+<span class="material-symbols-outlined text-2xl text-purple-500">calendar_month</span>
+<h2 class="text-[#111618] dark:text-white text-base font-bold leading-tight">Calendar</h2>
+</div>
+<div class="flex flex-1 gap-3 rounded-xl border border-[#dbe2e6] dark:border-gray-700 bg-white dark:bg-background-dark p-4 items-center cursor-grab shadow-sm">
+<span class="material-symbols-outlined text-2xl text-teal-500">medication</span>
+<h2 class="text-[#111618] dark:text-white text-base font-bold leading-tight">Meds</h2>
+</div>
+</div>
+<!-- Floating Action Button -->
+<div class="fixed bottom-6 right-6">
+<button class="flex min-w-[56px] h-14 cursor-pointer items-center justify-center overflow-hidden rounded-full bg-primary text-white shadow-lg hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-background-dark">
+<span class="material-symbols-outlined text-3xl">check</span>
+</button>
+</div>
+</div>
+</body></html>

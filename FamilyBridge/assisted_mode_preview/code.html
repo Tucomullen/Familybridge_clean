@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FamilyBridge Assisted Mode Preview</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#13a4ec",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101c22",
+            "text-light": "#111618",
+            "text-dark": "#f0f3f4",
+          },
+          fontFamily: {
+            "display": ["Inter", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="flex items-center bg-white dark:bg-background-dark p-4 pb-2 justify-between border-b border-gray-200 dark:border-gray-800">
+<button class="text-text-light dark:text-text-dark flex size-12 shrink-0 items-center justify-center">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h2 class="text-text-light dark:text-text-dark text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Assisted Mode Preview</h2>
+<div class="size-12 shrink-0"></div>
+</div>
+<div class="flex-grow p-4">
+<div class="w-full gap-1 overflow-hidden bg-white dark:bg-gray-800 rounded-xl shadow-lg @[480px]:gap-2 aspect-[2/3] flex flex-col">
+<div class="p-4 bg-gray-50 dark:bg-gray-700/50 rounded-t-xl flex items-center justify-between">
+<p class="text-sm font-medium text-gray-600 dark:text-gray-300">Senior's View</p>
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-red-500"></span>
+<span class="w-2 h-2 rounded-full bg-yellow-500"></span>
+<span class="w-2 h-2 rounded-full bg-green-500"></span>
+</div>
+</div>
+<div class="flex-1 w-full bg-center bg-no-repeat bg-cover aspect-auto" data-alt="A preview of the senior's app interface with large icons and simplified layout." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDXPlb0g7FqIbH5F_5iYh1f6Fl9Qv7V7ctJrUuOzqRv9vmERpyugqJenUqtZqLtPjc103-nTlTiPAXDbvdKRT2kUeK7GXO5exZv63cSKtRsL5gtNWyFBl4srYtD9NggFCecdttCHpShidWt-hRM-VRP0pD-CjzAmb41Hr2_ZLsBgSrb838awEgB4efTW56ungC-FGP6LMsMbyNDx9WhNY6oxd09IXKkEs6_hY5pGnF8LdEfY1cWPXCiuSXHXSmSch9ZPpM7F8fj9DM");'></div>
+</div>
+</div>
+<div class="bg-white dark:bg-background-dark p-4 rounded-t-xl shadow-[0_-10px_30px_-15px_rgba(0,0,0,0.1)]">
+<div class="flex items-center gap-4 min-h-14 justify-between mb-4">
+<div class="flex items-center gap-4">
+<div class="text-primary flex items-center justify-center rounded-lg bg-primary/20 shrink-0 size-10">
+<span class="material-symbols-outlined">touch_app</span>
+</div>
+<div>
+<p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">Simulate Action</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm">Tap to interact with the preview.</p>
+</div>
+</div>
+<div class="shrink-0">
+<label class="relative flex h-[31px] w-[51px] cursor-pointer items-center rounded-full border-none bg-gray-200 dark:bg-gray-700 p-0.5 has-[:checked]:justify-end has-[:checked]:bg-primary">
+<div class="h-full w-[27px] rounded-full bg-white transition-transform" style="box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px, rgba(0, 0, 0, 0.06) 0px 3px 1px;"></div>
+<input class="invisible absolute" type="checkbox"/>
+</label>
+</div>
+</div>
+<div class="flex px-4 py-3">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-5 flex-1 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+<span class="truncate">Save Changes</span>
+</button>
+</div>
+<p class="text-primary text-sm font-medium leading-normal pt-2 pb-1 px-4 text-center underline cursor-pointer hover:text-primary/80 transition-colors">Reset to Default</p>
+</div>
+</div>
+</body></html>

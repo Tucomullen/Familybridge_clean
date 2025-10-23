@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contacts &amp; Favorites</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&amp;family=Nunito:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#6C91C2",
+                        "secondary": "#F7A072",
+                        "background-light": "#F8F9FA",
+                        "background-dark": "#101c22",
+                        "text-light": "#343A40",
+                        "text-dark": "#E5E7EB"
+                    },
+                    fontFamily: {
+                        "display": ["Nunito", "Lato", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden text-text-light dark:text-text-dark">
+<div class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-10">
+<div class="text-text-light dark:text-text-dark flex size-12 shrink-0 items-center justify-start">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</div>
+<h1 class="text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Contacts &amp; Favorites</h1>
+<div class="flex w-12 items-center justify-end">
+<button class="text-secondary text-base font-bold leading-normal tracking-[0.015em] shrink-0">Save</button>
+</div>
+</div>
+<main class="flex-1 px-4">
+<h2 class="text-[22px] font-bold leading-tight tracking-[-0.015em] pb-3 pt-5">Your Senior's Favorites</h2>
+<div class="grid grid-cols-2 gap-4">
+<div class="relative flex flex-col gap-2 pb-3 items-center">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl" data-alt="Photo of Anna, daughter." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB8U8ye3y5R4s5UpH1uGgsXOlalvDxqM0BabSNIeQMBmQG9EghI1L7owx-z_CcPZ5ciHqs-GJNLH8oT-uDmGT0ahb4d1upbKw_Yui2GzlsqBKZVLDJvLFL_54bh0KKzs-LrPYOtTSrOyKTBNtSpy2QJuYED9LUsgoPM-bEwZgQcLf6eO1I5wHh90NvAhheShkxS-SXtWzBBhBA7lOxfinLTSMgUU3t-jNMEYVktxODuDYmqVE9bF4rTe9lcgFaije_eG-Ru9BN3FaI");'>
+<button class="absolute top-1 right-1 bg-black/30 text-white rounded-full p-1">
+<span class="material-symbols-outlined text-base">close</span>
+</button>
+<div class="absolute bottom-1 right-1 bg-black/30 text-white rounded-full p-1 cursor-move">
+<span class="material-symbols-outlined text-base">drag_indicator</span>
+</div>
+</div>
+<div>
+<p class="text-base font-medium leading-normal text-center">Anna</p>
+<p class="text-sm font-normal leading-normal text-center text-text-light/70 dark:text-text-dark/70">Daughter</p>
+</div>
+</div>
+<div class="relative flex flex-col gap-2 pb-3 items-center">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl" data-alt="Photo of Mark, son." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAs_DyyW7zfvG7WJfuT_4Q0nX5onU-P34efNSdiWuXF60Xp97HaZYPZBJff6kAxO5JHc8ltzDw4kxC_TtVlh55nl89L3ZMuOQRY4PtB2mCtVFx9WBD73WNY5a0-rc_deQLKYFOsiCDo5hWrVHVzuHSKlK4w_ho5V5kaXgNyQEw4HvuNyLXpX9kl9tuwZTd4F7sJ-21exZlz8DOeJZOAJWqtY6us5BxsWQH8z_q4W6SrQ-TJF26jmDEZZViEeXHM7OccNq6JcAmREiY");'>
+<button class="absolute top-1 right-1 bg-black/30 text-white rounded-full p-1">
+<span class="material-symbols-outlined text-base">close</span>
+</button>
+<div class="absolute bottom-1 right-1 bg-black/30 text-white rounded-full p-1 cursor-move">
+<span class="material-symbols-outlined text-base">drag_indicator</span>
+</div>
+</div>
+<div>
+<p class="text-base font-medium leading-normal text-center">Mark</p>
+<p class="text-sm font-normal leading-normal text-center text-text-light/70 dark:text-text-dark/70">Son</p>
+</div>
+</div>
+<div class="relative flex flex-col gap-2 pb-3 items-center">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl" data-alt="Photo of Dr. Emily, doctor." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBMtQMrytVhB320T3qierzwadBPsYynw8QGzeLo0r7HwPJYrsI0UCWWLuK9QmzpZenSF9HG3t6m9cJsmE5dfeATaKFKd9TUMBVetShb6qvsUWOPghratMP0bNQqtB8zbXvSOWlebKXh53avupTwCpeVHgj7fx-bSj2JC6YgTAjSZbDDApqMw_pT6e8Sza7ur7h4bvzAAFn5ADbI3W_gpyUkvH58wxfThV04yAtITpvSmIU-z5-IG71FKjlJ9ZuX4omgxD7LVYdSj5w");'>
+<button class="absolute top-1 right-1 bg-black/30 text-white rounded-full p-1">
+<span class="material-symbols-outlined text-base">close</span>
+</button>
+<div class="absolute bottom-1 right-1 bg-black/30 text-white rounded-full p-1 cursor-move">
+<span class="material-symbols-outlined text-base">drag_indicator</span>
+</div>
+</div>
+<div>
+<p class="text-base font-medium leading-normal text-center">Dr. Emily</p>
+<p class="text-sm font-normal leading-normal text-center text-text-light/70 dark:text-text-dark/70">Doctor</p>
+</div>
+</div>
+<div class="flex flex-col gap-2 pb-3 items-center justify-center border-2 border-dashed border-gray-300 dark:border-gray-600 rounded-xl">
+<button class="flex flex-col items-center justify-center text-primary">
+<span class="material-symbols-outlined text-4xl">add_circle</span>
+<p class="text-sm font-normal leading-normal mt-1">Add Favorite</p>
+</button>
+</div>
+<div class="flex flex-col gap-2 pb-3 items-center justify-center border-2 border-dashed border-gray-300 dark:border-gray-600 rounded-xl">
+<button class="flex flex-col items-center justify-center text-primary">
+<span class="material-symbols-outlined text-4xl">add_circle</span>
+<p class="text-sm font-normal leading-normal mt-1">Add Favorite</p>
+</button>
+</div>
+<div class="flex flex-col gap-2 pb-3 items-center justify-center border-2 border-dashed border-gray-300 dark:border-gray-600 rounded-xl">
+<button class="flex flex-col items-center justify-center text-primary">
+<span class="material-symbols-outlined text-4xl">add_circle</span>
+<p class="text-sm font-normal leading-normal mt-1">Add Favorite</p>
+</button>
+</div>
+</div>
+<h2 class="text-[22px] font-bold leading-tight tracking-[-0.015em] px-0 pb-3 pt-8">All Contacts</h2>
+<div class="flex flex-col gap-2 pb-24">
+<div class="flex items-center gap-4 bg-background-light dark:bg-background-dark p-2 min-h-14 justify-between rounded-lg">
+<div class="flex items-center gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-10 w-10" data-alt="Photo of Ben." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAsxXES66hWxYeo36xaJ1QPEiwCaX2H-YkFc_O3poKOAvOpfADhxUtE3y7Rp5b6a--7k45-3HK0svpt6HKlPI3QpiSkJdhlDhBLFxxulYifZfCAxIQXg1OC489-m6pwAWTT_prsIT83pKHFFSIuGQn6pWKKvtzvbGTX_2p36xFTxf5IaSwxqwL-V9zAYrvzQqk4KaKE95YwCn3ezAC2tBFIFblMz7yP_YKl0WXLzii-m-u0JZNckdmNsc192W5OgiPLpBwqsEHdlL4");'></div>
+<p class="text-base font-normal leading-normal flex-1 truncate">Ben</p>
+</div>
+<div class="shrink-0">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-9 px-4 bg-primary/20 text-primary text-sm font-medium leading-normal w-fit">
+<span class="truncate">Add to Favorites</span>
+</button>
+</div>
+</div>
+<div class="flex items-center gap-4 bg-background-light dark:bg-background-dark p-2 min-h-14 justify-between rounded-lg">
+<div class="flex items-center gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-10 w-10" data-alt="Photo of Chloe." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBZ0CjTGdSfDzgUTTgsoT2yc_Jtm3JUesNCxDRiphpndy6pHr-t4iPIVnA1kTj5coa2tAPofEr14yGtboYSYNdbFY-bKf91jvFwL3dDku-kgOuxNJGnGDEm6KdSLNRS-ldCOuqmRtbNybFmup-tdCDZZArtl34uvPDn2AJ6wLvzpqzhyVPzTQCgejySfmDuNHDcMhLVoWL2mTZqa7oJlhJ9lq6--CWIgv4J6jgl50NbctqJO9ji1VgWqFPiVIF3Aoi422YpHVrVy5A");'></div>
+<p class="text-base font-normal leading-normal flex-1 truncate">Chloe</p>
+</div>
+<div class="shrink-0">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-9 px-4 bg-primary/20 text-primary text-sm font-medium leading-normal w-fit">
+<span class="truncate">Add to Favorites</span>
+</button>
+</div>
+</div>
+<div class="flex items-center gap-4 bg-background-light dark:bg-background-dark p-2 min-h-14 justify-between rounded-lg">
+<div class="flex items-center gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-10 w-10" data-alt="Photo of David." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAoU6OcT9vXukaG5iDL_F0BIgBlPMdXQpYA-qyliEIXKMJ_yz99_vW0p1yyeHpwnDKcLEYBuTKycOhZkzQtwqanA2U6ylS5vwSI-Sl4yoRYnMbQIwwADYBrOMagvdsn_gNUO0Pgq2SaDzSqCM6iiGpAgGSYsLKdpUu-qSmahe_gKgZ6EzPcv0TdgNiTouu-f60soI0qn_RyRiz770SQpgJGpkbDUSo5dKOqVnggTao7pm00B3Y_BynX_U9Av7Dmt6SzMyD8xA0Cfek");'></div>
+<p class="text-base font-normal leading-normal flex-1 truncate">David</p>
+</div>
+<div class="shrink-0">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-9 px-4 bg-primary/20 text-primary text-sm font-medium leading-normal w-fit">
+<span class="truncate">Add to Favorites</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+<div class="fixed bottom-6 right-6">
+<button class="flex items-center justify-center w-14 h-14 bg-secondary rounded-full shadow-lg text-white">
+<span class="material-symbols-outlined text-3xl">add</span>
+</button>
+</div>
+</div>
+</body></html>

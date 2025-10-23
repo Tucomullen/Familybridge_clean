@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Interface &amp; Accessibility Settings</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#13a4ec",
+            "background-light": "#f5f5f5",
+            "background-dark": "#101c22",
+            "warm-gray": {
+              "DEFAULT": "#4A4A4A",
+              "light": "#F5F5F5"
+            },
+            "accent": "#F5A623",
+          },
+          fontFamily: {
+            "display": ["Inter", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col dark group/design-root overflow-x-hidden">
+<div class="flex items-center bg-[#111618] p-4 pb-2 justify-between">
+<div class="text-white flex size-12 shrink-0 items-center material-symbols-outlined" data-icon="ArrowLeft" data-size="24px" data-weight="regular">arrow_back</div>
+<h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Interface &amp; Accessibility</h2>
+<div class="flex w-12 items-center justify-end">
+<p class="text-primary text-base font-bold leading-normal tracking-[0.015em] shrink-0">Save</p>
+</div>
+</div>
+<div class="p-4 @container">
+<div class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start shadow-[0_0_4px_rgba(0,0,0,0.1)] bg-[#1c2327]">
+<div class="w-full bg-center bg-no-repeat aspect-[1.5] bg-cover rounded-xl flex items-center justify-center p-4" data-alt="A preview of the app's interface showing a contact card for 'Grandma Elara' with her picture, a message, and a call button.">
+<div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-2 py-4 px-4 bg-[#111618]/60 rounded-xl">
+<div class="flex items-center gap-4">
+<img class="size-16 rounded-full" data-alt="Portrait of an elderly woman smiling warmly" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtZ1T25sPpwuJ0cBAqrZ37V82kcVXwUh8VqOxjZLHp1_J-wAZLcho27e2_y_fcWWJ7hlGMEEUUV0SDEZDNhQFAbIzlg_mUui0eb8R8GMYt2n0vV-WO1n90CkrgPVV62FjRprqbZ7GE_qZCG2JTy4BY9gT7HnBXBkn3yhsZNS5uY0fIbcTDiqyjMYRhCjjTxlWy4G_N4v3UpiapSUSvZrHbO14b_C8A90ZCMVM1vcso3yPq6Rd1PoK4vn6jgb-KcHf2B1UlVQLSs7k"/>
+<div>
+<p class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Grandma Elara</p>
+<p class="text-[#9db0b9] text-sm font-normal leading-normal">Online</p>
+</div>
+</div>
+<div class="flex items-end gap-3 justify-between mt-2">
+<p class="text-[#9db0b9] text-base font-normal leading-normal">Thinking of you, sweetie!</p>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-primary text-white text-sm font-medium leading-normal">
+<span class="truncate">Call</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-2">Appearance</h2>
+<div class="flex flex-col gap-2 bg-[#1c2327] rounded-xl mx-4 p-2">
+<div class="flex items-center gap-4 px-2 min-h-14 justify-between">
+<div class="flex items-center gap-4">
+<div class="text-white flex items-center justify-center rounded-lg bg-[#283339] shrink-0 size-10 material-symbols-outlined" data-icon="CircleHalf" data-size="24px" data-weight="regular">contrast</div>
+<p class="text-white text-base font-normal leading-normal flex-1 truncate">High Contrast</p>
+</div>
+<div class="shrink-0">
+<label class="relative flex h-[31px] w-[51px] cursor-pointer items-center rounded-full border-none bg-[#283339] p-0.5 has-[:checked]:justify-end has-[:checked]:bg-primary">
+<div class="h-full w-[27px] rounded-full bg-white transition-transform transform" style="box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px, rgba(0, 0, 0, 0.06) 0px 3px 1px;"></div>
+<input class="invisible absolute" type="checkbox"/>
+</label>
+</div>
+</div>
+<div class="w-full h-px bg-[#283339]"></div>
+<div class="flex items-center gap-4 px-2 min-h-14 justify-between">
+<div class="flex items-center gap-4">
+<div class="text-white flex items-center justify-center rounded-lg bg-[#283339] shrink-0 size-10 material-symbols-outlined" data-icon="Bed" data-size="24px" data-weight="regular">dark_mode</div>
+<p class="text-white text-base font-normal leading-normal flex-1 truncate">Night Mode</p>
+</div>
+<div class="shrink-0">
+<label class="relative flex h-[31px] w-[51px] cursor-pointer items-center rounded-full border-none bg-[#283339] p-0.5 has-[:checked]:justify-end has-[:checked]:bg-primary">
+<div class="h-full w-[27px] rounded-full bg-white transition-transform transform" style="box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px, rgba(0, 0, 0, 0.06) 0px 3px 1px;"></div>
+<input checked="" class="invisible absolute" type="checkbox"/>
+</label>
+</div>
+</div>
+</div>
+<h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Text &amp; Display</h2>
+<div class="flex flex-col gap-4 bg-[#1c2327] rounded-xl mx-4 p-4">
+<div>
+<label class="block text-white text-base font-normal leading-normal mb-2" for="font-size">Font Size</label>
+<input class="w-full h-2 bg-[#283339] rounded-lg appearance-none cursor-pointer [&amp;::-webkit-slider-thumb]:bg-primary [&amp;::-moz-range-thumb]:bg-primary" id="font-size" max="100" min="0" type="range" value="50"/>
+<div class="flex justify-between text-xs text-[#9db0b9] mt-1">
+<span>Small</span>
+<span>Medium</span>
+<span>Large</span>
+<span>Extra Large</span>
+</div>
+<p class="text-[#9db0b9] text-xs font-normal leading-normal mt-1">Increase font size for better readability.</p>
+</div>
+<div>
+<label class="block text-white text-base font-normal leading-normal mb-2" for="button-size">Button Size</label>
+<input class="w-full h-2 bg-[#283339] rounded-lg appearance-none cursor-pointer [&amp;::-webkit-slider-thumb]:bg-primary [&amp;::-moz-range-thumb]:bg-primary" id="button-size" max="100" min="0" type="range" value="25"/>
+<div class="flex justify-between text-xs text-[#9db0b9] mt-1">
+<span>Standard</span>
+<span>Enlarged</span>
+</div>
+</div>
+</div>
+<h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Language</h2>
+<div class="bg-[#1c2327] rounded-xl mx-4">
+<div class="flex items-center gap-4 px-4 min-h-14 justify-between">
+<div class="flex items-center gap-4">
+<div class="text-white flex items-center justify-center rounded-lg bg-[#283339] shrink-0 size-10 material-symbols-outlined" data-icon="Language" data-size="24px" data-weight="regular">language</div>
+<p class="text-white text-base font-normal leading-normal flex-1 truncate">Language</p>
+</div>
+<div class="flex items-center gap-2">
+<p class="text-[#9db0b9] text-base font-normal">English</p>
+<div class="text-white material-symbols-outlined">arrow_forward_ios</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col items-center gap-4 p-4 mt-8">
+<button class="flex w-full min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-4 bg-primary text-white text-base font-bold leading-normal">
+<span class="truncate">Save Changes</span>
+</button>
+<button class="text-primary text-sm font-medium">Reset to Default</button>
+</div>
+</div>
+</body></html>

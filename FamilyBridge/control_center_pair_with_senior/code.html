@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FamilyBridge Pairing</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#4A90E2",
+            "secondary": "#50E3C2",
+            "background-light": "#F7F7F7",
+            "background-dark": "#101c22",
+            "text-light": "#333333",
+            "text-dark": "#f7f7f7"
+          },
+          fontFamily: {
+            "display": ["Inter", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="flex items-center p-4 pb-2 justify-between">
+<div class="text-text-light dark:text-text-dark flex size-12 shrink-0 items-center justify-center">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</div>
+<h1 class="text-text-light dark:text-text-dark text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pr-12">Pair with Your Senior's App</h1>
+</div>
+<div class="flex w-full grow @container py-3 justify-center">
+<div class="w-full max-w-sm gap-1 overflow-hidden bg-background-light dark:bg-background-dark @[480px]:gap-2 aspect-[3/2] flex justify-center items-center">
+<img class="rounded-xl object-cover h-48 w-48" data-alt="Two hands reaching out to each other, symbolizing connection and support." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCP9AuyAPIxsTecYz5fZTW0X9YfTOqEE-kbGAeyspeSa2KvXc1HDLzjZ8jYwgTeSIwbPszOsWcfD1Aga0QmYu5k1k_2D6G78fu5YWtd7RHSDCWeqrAoNQO-7ArQq1X8upk6pNJUXjURGbAcG7QGiJDGYTM-rPAVEAPzerZs2zRQ0cItMD1lQ1nR5wApXDJ7t78ChDjU_N2OsZ70PzdAr8EmHPubzIPjMmH5_NwEiIstXJw1hwafTBrLORi5PUepaAOdYHdpfNSrTH4"/>
+</div>
+</div>
+<div class="px-4 py-3">
+<h2 class="text-text-light dark:text-text-dark text-2xl font-bold leading-tight tracking-[-0.015em] text-center">Let's get connected.</h2>
+<p class="text-text-light dark:text-text-dark text-base font-normal leading-normal py-3 text-center">
+        Scan the QR code displayed on your senior's app or enter the 6-digit code to begin.
+      </p>
+</div>
+<div class="flex flex-col px-4 py-3 space-y-4">
+<button class="flex min-w-[84px] max-w-full cursor-pointer items-center justify-center overflow-hidden rounded-xl h-14 px-5 bg-primary text-white gap-2 text-base font-bold leading-normal tracking-[0.015em]">
+<span class="material-symbols-outlined text-2xl">qr_code_scanner</span>
+<span class="truncate">Scan QR Code</span>
+</button>
+<button class="flex min-w-[84px] max-w-full cursor-pointer items-center justify-center overflow-hidden rounded-xl h-14 px-5 bg-transparent text-primary border border-primary gap-2 text-base font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Enter 6-digit code</span>
+</button>
+</div>
+<div class="flex justify-center px-4 py-3">
+<fieldset class="relative flex gap-2">
+<input class="flex h-14 w-12 text-center [appearance:textfield] focus:outline-0 focus:ring-0 [&amp;::-webkit-inner-spin-button]:appearance-none [&amp;::-webkit-outer-spin-button]:appearance-none bg-transparent border-0 border-b-2 border-gray-300 dark:border-gray-600 focus:border-primary text-xl font-bold leading-normal" max="9" maxlength="1" min="0" onkeydown="javascript:(event.key=='Backspace'&amp;&amp;this.value===''&amp;&amp;this.previousSibling&amp;&amp;((this.previousSibling.value=''),this.previousSibling.focus()))||(event.key==='ArrowLeft'&amp;&amp;this.previousSibling&amp;&amp;this.previousSibling.focus())||(event.key==='ArrowRight'&amp;&amp;this.nextSibling&amp;&amp;this.nextSibling.focus());" onkeyup="javascript:event.key.match(/^\d$/)&amp;&amp;((this.value.length&gt;1&amp;&amp;((this.nextSibling&amp;&amp;(this.nextSibling.value=this.value.slice(1))),(this.value=this.value[0]))),(this.nextSibling&amp;&amp;this.nextSibling.focus()));" type="number" value=""/>
+<input class="flex h-14 w-12 text-center [appearance:textfield] focus:outline-0 focus:ring-0 [&amp;::-webkit-inner-spin-button]:appearance-none [&amp;::-webkit-outer-spin-button]:appearance-none bg-transparent border-0 border-b-2 border-gray-300 dark:border-gray-600 focus:border-primary text-xl font-bold leading-normal" max="9" maxlength="1" min="0" onkeydown="javascript:(event.key=='Backspace'&amp;&amp;this.value===''&amp;&amp;this.previousSibling&amp;&amp;((this.previousSibling.value=''),this.previousSibling.focus()))||(event.key==='ArrowLeft'&amp;&amp;this.previousSibling&amp;&amp;this.previousSibling.focus())||(event.key==='ArrowRight'&amp;&amp;this.nextSibling&amp;&amp;this.nextSibling.focus());" onkeyup="javascript:event.key.match(/^\d$/)&amp;&amp;((this.value.length&gt;1&amp;&amp;((this.nextSibling&amp;&amp;(this.nextSibling.value=this.value.slice(1))),(this.value=this.value[0]))),(this.nextSibling&amp;&amp;this.nextSibling.focus()));" type="number" value=""/>
+<input class="flex h-14 w-12 text-center [appearance:textfield] focus:outline-0 focus:ring-0 [&amp;::-webkit-inner-spin-button]:appearance-none [&amp;::-webkit-outer-spin-button]:appearance-none bg-transparent border-0 border-b-2 border-gray-300 dark:border-gray-600 focus:border-primary text-xl font-bold leading-normal" max="9" maxlength="1" min="0" onkeydown="javascript:(event.key=='Backspace'&amp;&amp;this.value===''&amp;&amp;this.previousSibling&amp;&amp;((this.previousSibling.value=''),this.previousSibling.focus()))||(event.key==='ArrowLeft'&amp;&amp;this.previousSibling&amp;&amp;this.previousSibling.focus())||(event.key==='ArrowRight'&amp;&amp;this.nextSibling&amp;&amp;this.nextSibling.focus());" onkeyup="javascript:event.key.match(/^\d$/)&amp;&amp;((this.value.length&gt;1&amp;&amp;((this.nextSibling&amp;&amp;(this.nextSibling.value=this.value.slice(1))),(this.value=this.value[0]))),(this.nextSibling&amp;&amp;this.nextSibling.focus()));" type="number" value=""/>
+<input class="flex h-14 w-12 text-center [appearance:textfield] focus:outline-0 focus:ring-0 [&amp;::-webkit-inner-spin-button]:appearance-none [&amp;::-webkit-outer-spin-button]:appearance-none bg-transparent border-0 border-b-2 border-gray-300 dark:border-gray-600 focus:border-primary text-xl font-bold leading-normal" max="9" maxlength="1" min="0" onkeydown="javascript:(event.key=='Backspace'&amp;&amp;this.value===''&amp;&amp;this.previousSibling&amp;&amp;((this.previousSibling.value=''),this.previousSibling.focus()))||(event.key==='ArrowLeft'&amp;&amp;this.previousSibling&amp;&amp;this.previousSibling.focus())||(event.key==='ArrowRight'&amp;&amp;this.nextSibling&amp;&amp;this.nextSibling.focus());" onkeyup="javascript:event.key.match(/^\d$/)&amp;&amp;((this.value.length&gt;1&amp;&amp;((this.nextSibling&amp;&amp;(this.nextSibling.value=this.value.slice(1))),(this.value=this.value[0]))),(this.nextSibling&amp;&amp;this.nextSibling.focus()));" type="number" value=""/>
+<input class="flex h-14 w-12 text-center [appearance:textfield] focus:outline-0 focus:ring-0 [&amp;::-webkit-inner-spin-button]:appearance-none [&amp;::-webkit-outer-spin-button]:appearance-none bg-transparent border-0 border-b-2 border-gray-300 dark:border-gray-600 focus:border-primary text-xl font-bold leading-normal" max="9" maxlength="1" min="0" onkeydown="javascript:(event.key=='Backspace'&amp;&amp;this.value===''&amp;&amp;this.previousSibling&amp;&amp;((this.previousSibling.value=''),this.previousSibling.focus()))||(event.key==='ArrowLeft'&amp;&amp;this.previousSibling&amp;&amp;this.previousSibling.focus())||(event.key==='ArrowRight'&amp;&amp;this.nextSibling&amp;&amp;this.nextSibling.focus());" onkeyup="javascript:event.key.match(/^\d$/)&amp;&amp;((this.value.length&gt;1&amp;&amp;((this.nextSibling&amp;&amp;(this.nextSibling.value=this.value.slice(1))),(this.value=this.value[0]))),(this.nextSibling&amp;&amp;this.nextSibling.focus()));" type="number" value=""/>
+<input class="flex h-14 w-12 text-center [appearance:textfield] focus:outline-0 focus:ring-0 [&amp;::-webkit-inner-spin-button]:appearance-none [&amp;::-webkit-outer-spin-button]:appearance-none bg-transparent border-0 border-b-2 border-gray-300 dark:border-gray-600 focus:border-primary text-xl font-bold leading-normal" max="9" maxlength="1" min="0" onkeydown="javascript:(event.key=='Backspace'&amp;&amp;this.value===''&amp;&amp;this.previousSibling&amp;&amp;((this.previousSibling.value=''),this.previousSibling.focus()))||(event.key==='ArrowLeft'&amp;&amp;this.previousSibling&amp;&amp;this.previousSibling.focus())||(event.key==='ArrowRight'&amp;&amp;this.nextSibling&amp;&amp;this.nextSibling.focus());" onkeyup="javascript:event.key.match(/^\d$/)&amp;&amp;((this.value.length&gt;1&amp;&amp;((this.nextSibling&amp;&amp;(this.nextSibling.value=this.value.slice(1))),(this.value=this.value[0]))),(this.nextSibling&amp;&amp;this.nextSibling.focus()));" type="number" value=""/>
+</fieldset>
+</div>
+<div class="flex px-4 py-3 mt-4">
+<button class="flex min-w-[84px] max-w-full cursor-pointer items-center justify-center overflow-hidden rounded-xl h-14 px-5 flex-1 bg-primary text-white gap-2 text-base font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Pair</span>
+</button>
+</div>
+<div class="h-5"></div>
+</div>
+</body></html>
