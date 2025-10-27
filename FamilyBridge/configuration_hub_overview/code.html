@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FamilyBridge Control Center</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#13a4ec",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101c22",
+          },
+          fontFamily: {
+            "display": ["Inter", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="flex flex-col gap-2 bg-background-light dark:bg-background-dark p-4 pb-2">
+<div class="flex items-center h-12 justify-between">
+<div class="flex size-12 shrink-0 items-center justify-center">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="Photo of Dad" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCO_ZkTDwnYl65hw_ga4-nhW_-D6WMHe_O7lSaYHRm6m2VC496Q0fI6SKx8D20ePNGierwf9B-mRtXYA1AjIKVK21bl-he0Z90Ch1mLbNzgM5aS5yeUeAH9UybZa4YMioqLq8ks7OaRZ108rxwNUNZutQ9q77bOS1QlFO3ljwlO23Fx55uJhkTsHIWDF1UCFjA-IRp0TmXoPRgHHQPkIvHajDU6E5dOh4UiJJCnwwjgDD2HYpQ595-ePwYHw6WDW3yNshlh3wz2oBk");'></div>
+</div>
+<div class="flex items-center gap-2">
+<p class="text-gray-600 dark:text-gray-300 text-sm font-medium leading-normal shrink-0">Dad's App</p>
+<div class="w-2.5 h-2.5 rounded-full bg-green-500"></div>
+<p class="text-green-500 text-sm font-medium leading-normal shrink-0">Connected</p>
+</div>
+</div>
+<p class="text-gray-800 dark:text-gray-100 tracking-light text-[28px] font-bold leading-tight">Hello, Sarah!</p>
+</div>
+<div class="flex flex-col gap-4 p-4">
+<div class="flex items-center gap-4 bg-white dark:bg-gray-800/50 p-4 rounded-lg shadow-sm">
+<div class="text-primary flex items-center justify-center rounded-lg bg-primary/20 shrink-0 size-12">
+<span class="material-symbols-outlined text-2xl">tune</span>
+</div>
+<div class="flex flex-col justify-center flex-1">
+<p class="text-gray-800 dark:text-gray-100 text-base font-medium leading-normal line-clamp-1">Interface &amp; Accessibility</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal line-clamp-2">Adjust font sizes, colors, and other visual settings for Dad.</p>
+</div>
+<div class="shrink-0">
+<div class="text-gray-500 dark:text-gray-400 flex size-7 items-center justify-center">
+<span class="material-symbols-outlined text-2xl">chevron_right</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-4 bg-white dark:bg-gray-800/50 p-4 rounded-lg shadow-sm">
+<div class="text-primary flex items-center justify-center rounded-lg bg-primary/20 shrink-0 size-12">
+<span class="material-symbols-outlined text-2xl">space_dashboard</span>
+</div>
+<div class="flex flex-col justify-center flex-1">
+<p class="text-gray-800 dark:text-gray-100 text-base font-medium leading-normal line-clamp-1">Home Builder</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal line-clamp-2">Customize the layout and features on Dad's home screen.</p>
+</div>
+<div class="shrink-0">
+<div class="text-gray-500 dark:text-gray-400 flex size-7 items-center justify-center">
+<span class="material-symbols-outlined text-2xl">chevron_right</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-4 bg-white dark:bg-gray-800/50 p-4 rounded-lg shadow-sm">
+<div class="text-primary flex items-center justify-center rounded-lg bg-primary/20 shrink-0 size-12">
+<span class="material-symbols-outlined text-2xl">group</span>
+</div>
+<div class="flex flex-col justify-center flex-1">
+<p class="text-gray-800 dark:text-gray-100 text-base font-medium leading-normal line-clamp-1">Contacts &amp; Favorites</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal line-clamp-2">Manage Dad's important contacts and create speed dials.</p>
+</div>
+<div class="shrink-0">
+<div class="text-gray-500 dark:text-gray-400 flex size-7 items-center justify-center">
+<span class="material-symbols-outlined text-2xl">chevron_right</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-4 bg-white dark:bg-gray-800/50 p-4 rounded-lg shadow-sm">
+<div class="text-primary flex items-center justify-center rounded-lg bg-primary/20 shrink-0 size-12">
+<span class="material-symbols-outlined text-2xl">notifications_active</span>
+</div>
+<div class="flex flex-col justify-center flex-1">
+<p class="text-gray-800 dark:text-gray-100 text-base font-medium leading-normal line-clamp-1">Routines &amp; Reminders</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal line-clamp-2">Set up daily routines and medication reminders for Dad.</p>
+</div>
+<div class="shrink-0">
+<div class="text-gray-500 dark:text-gray-400 flex size-7 items-center justify-center">
+<span class="material-symbols-outlined text-2xl">chevron_right</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-4 bg-white dark:bg-gray-800/50 p-4 rounded-lg shadow-sm">
+<div class="text-primary flex items-center justify-center rounded-lg bg-primary/20 shrink-0 size-12">
+<span class="material-symbols-outlined text-2xl">privacy_tip</span>
+</div>
+<div class="flex flex-col justify-center flex-1">
+<p class="text-gray-800 dark:text-gray-100 text-base font-medium leading-normal line-clamp-1">Privacy &amp; Roles</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal line-clamp-2">Control who has access to Dad's information and what they can see.</p>
+</div>
+<div class="shrink-0">
+<div class="text-gray-500 dark:text-gray-400 flex size-7 items-center justify-center">
+<span class="material-symbols-outlined text-2xl">chevron_right</span>
+</div>
+</div>
+</div>
+</div>
+<div class="fixed bottom-6 right-6">
+<button class="bg-primary hover:bg-primary/90 text-white font-bold py-3 px-5 rounded-full shadow-lg flex items-center gap-2">
+<span class="material-symbols-outlined">help_outline</span>
+            Help &amp; Support
+        </button>
+</div>
+<div class="fixed bottom-0 left-0 right-0 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700">
+<div class="flex justify-around items-center h-16">
+<div class="flex flex-col items-center text-primary">
+<span class="material-symbols-outlined text-2xl">home</span>
+<span class="text-xs font-medium">Home</span>
+</div>
+<div class="flex flex-col items-center text-gray-500 dark:text-gray-400">
+<span class="material-symbols-outlined text-2xl">notifications</span>
+<span class="text-xs font-medium">Notifications</span>
+</div>
+<div class="flex flex-col items-center text-gray-500 dark:text-gray-400">
+<span class="material-symbols-outlined text-2xl">settings</span>
+<span class="text-xs font-medium">Settings</span>
+</div>
+</div>
+</div>
+</div>
+</body></html>

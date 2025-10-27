@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FamilyBridge Welcome</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;family=Nunito+Sans:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#13a4ec",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101c22",
+          },
+          fontFamily: {
+            "display": ["Nunito Sans", "Inter", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .font-display {
+      font-family: 'Nunito Sans', sans-serif;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body>
+<div class="relative flex h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-hidden font-display">
+<div class="flex-shrink-0 px-6 pt-8">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-3xl">family_restroom</span>
+<span class="text-2xl font-bold text-[#111618] dark:text-white">FamilyBridge</span>
+</div>
+</div>
+<div class="flex flex-col items-center justify-center flex-grow p-6 text-center">
+<div class="w-full max-w-sm">
+<div class="w-full bg-center bg-no-repeat bg-contain aspect-square rounded-none" data-alt="A heartwarming illustration of a senior and a younger family member sharing a warm embrace and smiling." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC0p0xDKQv3IWAX5tGi7Vgue49euQAInQeld4KiZ7xFWdmwj5yID0Sm1dH_wzKAFfbQ1oZXsFW853lY5jXVoGJmeKN6optveIm6YDWyTAezFkDUxViIwRMHTN1TBKwFN0DlK4r2z7XyCLXjEZ-kUWAhPaUWr8uWAR3VkNdGx4Iq3ZGoU9P6psJsYPm1NgNhbxAz46dQwl3eTCprOZJ8z1IAEJNjIyfkaDClQpJ4RwO6eNinLcLoqnd6pBg5D_MKpIX8Pb9nC5kdL6M");'></div>
+</div>
+<div class="mt-8">
+<h1 class="text-[#111618] dark:text-white tracking-tight text-[32px] font-bold leading-tight">Welcome to FamilyBridge</h1>
+<p class="text-[#111618]/80 dark:text-white/80 text-lg font-normal leading-normal mt-2">Connecting generations, one simple moment at a time.</p>
+</div>
+</div>
+<div class="flex-shrink-0 px-6 pb-12">
+<div class="flex justify-center">
+<button class="flex min-w-[84px] w-full max-w-sm cursor-pointer items-center justify-center overflow-hidden rounded-xl h-14 px-5 bg-primary text-white text-lg font-bold leading-normal tracking-[0.015em] shadow-lg shadow-primary/30">
+<span class="truncate">Get Started</span>
+</button>
+</div>
+</div>
+</div>
+</body></html>

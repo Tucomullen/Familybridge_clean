@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FamilyBridge Control Center - Activity Monitor</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#78C2AD",
+            "background-light": "#F8F8F6",
+            "background-dark": "#101c22",
+            "peach": "#F5A68A",
+          },
+          fontFamily: {
+            "display": ["Inter", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<!-- Top App Bar -->
+<div class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-10">
+<div class="flex size-12 shrink-0 items-center justify-center">
+<span class="material-symbols-outlined text-gray-800 dark:text-gray-200">arrow_back</span>
+</div>
+<h1 class="text-gray-800 dark:text-gray-200 text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Activity Monitor</h1>
+<div class="size-12 shrink-0"></div>
+</div>
+<!-- Date Selector Chips -->
+<div class="flex gap-3 p-3 overflow-x-auto no-scrollbar">
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-gray-200 dark:bg-gray-700 px-4">
+<p class="text-gray-800 dark:text-gray-200 text-sm font-medium leading-normal">Yesterday</p>
+</div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary px-4">
+<p class="text-white text-sm font-medium leading-normal">Today</p>
+</div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-gray-200 dark:bg-gray-700 px-4">
+<p class="text-gray-800 dark:text-gray-200 text-sm font-medium leading-normal">Oct 25</p>
+</div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-gray-200 dark:bg-gray-700 px-4">
+<p class="text-gray-800 dark:text-gray-200 text-sm font-medium leading-normal">Oct 24</p>
+</div>
+</div>
+<!-- Daily Summary Card -->
+<div class="p-4">
+<div class="bg-white dark:bg-gray-800 rounded-xl p-4 shadow-sm">
+<!-- Section Header -->
+<h2 class="text-gray-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] pb-3">Mom's Activity - Today</h2>
+<!-- Connection Status -->
+<div class="flex items-center gap-2 bg-white dark:bg-gray-800 pb-4">
+<div class="text-green-500 flex items-center justify-center rounded-full bg-green-100 dark:bg-green-900 shrink-0 size-8">
+<span class="material-symbols-outlined text-base">wifi</span>
+</div>
+<p class="text-gray-600 dark:text-gray-300 text-sm font-normal leading-normal flex-1 truncate">Device Online</p>
+</div>
+<!-- Key Metric Grid -->
+<div class="grid grid-cols-2 gap-3">
+<div class="flex flex-col gap-3 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 p-4">
+<div class="text-primary"><span class="material-symbols-outlined">call</span></div>
+<div class="flex flex-col gap-1">
+<h2 class="text-gray-900 dark:text-white text-base font-bold leading-tight">5 Calls</h2>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Call Activity</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 p-4">
+<div class="text-peach"><span class="material-symbols-outlined">sos</span></div>
+<div class="flex flex-col gap-1">
+<h2 class="text-gray-900 dark:text-white text-base font-bold leading-tight">0 SOS Alerts</h2>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">SOS Events</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 p-4">
+<div class="text-primary"><span class="material-symbols-outlined">schedule</span></div>
+<div class="flex flex-col gap-1">
+<h2 class="text-gray-900 dark:text-white text-base font-bold leading-tight">45 mins</h2>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">App Usage</p>
+</div>
+</div>
+<!-- Routine Completion -->
+<div class="flex flex-col gap-3 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 p-4 justify-center items-center">
+<div class="relative size-20">
+<svg class="size-full" height="36" viewbox="0 0 36 36" width="36" xmlns="http://www.w3.org/2000/svg">
+<circle class="stroke-current text-gray-200 dark:text-gray-700" cx="18" cy="18" fill="none" r="16" stroke-width="3"></circle>
+<circle class="stroke-current text-primary" cx="18" cy="18" fill="none" r="16" stroke-dasharray="100" stroke-dashoffset="25" stroke-linecap="round" stroke-width="3"></circle>
+</svg>
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="text-base font-bold text-gray-900 dark:text-white">75%</span>
+</div>
+</div>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal mt-1">Routines</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Detailed Insight Cards -->
+<div class="px-4 space-y-4">
+<!-- Call Log Card -->
+<div class="bg-white dark:bg-gray-800 rounded-xl p-4 shadow-sm">
+<div class="flex justify-between items-center pb-2">
+<h3 class="text-gray-900 dark:text-white font-bold">Call Log</h3>
+<button class="text-primary text-sm font-medium">View All</button>
+</div>
+<div class="space-y-3 pt-2">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-gray-400 dark:text-gray-500">call_made</span>
+<p class="flex-1 text-gray-800 dark:text-gray-200">You called Mom</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm">10:42 AM</p>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-gray-400 dark:text-gray-500">call_received</span>
+<p class="flex-1 text-gray-800 dark:text-gray-200">Incoming call from Jane</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm">9:15 AM</p>
+</div>
+</div>
+</div>
+<!-- Routine Checklist Card -->
+<div class="bg-white dark:bg-gray-800 rounded-xl p-4 shadow-sm">
+<div class="flex justify-between items-center pb-2">
+<h3 class="text-gray-900 dark:text-white font-bold">Routine Checklist</h3>
+<button class="text-primary text-sm font-medium">See Details</button>
+</div>
+<div class="space-y-3 pt-2">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-green-500">check_circle</span>
+<p class="flex-1 text-gray-800 dark:text-gray-200">Morning Meds</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm">Completed</p>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-green-500">check_circle</span>
+<p class="flex-1 text-gray-800 dark:text-gray-200">Check Blood Pressure</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm">Completed</p>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-gray-400 dark:text-gray-500">radio_button_unchecked</span>
+<p class="flex-1 text-gray-800 dark:text-gray-200">Evening Walk</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm">Pending</p>
+</div>
+</div>
+</div>
+</div>
+<div class="h-24"></div> <!-- Spacer for bottom nav -->
+<!-- Bottom Navigation Bar -->
+<div class="fixed bottom-0 left-0 right-0 bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 flex justify-around items-center h-20 px-2">
+<div class="flex flex-col items-center gap-1 text-gray-500 dark:text-gray-400">
+<span class="material-symbols-outlined">home</span>
+<p class="text-xs">Home</p>
+</div>
+<div class="flex flex-col items-center gap-1 text-primary">
+<span class="material-symbols-outlined">monitoring</span>
+<p class="text-xs font-bold">Activity</p>
+</div>
+<div class="flex flex-col items-center gap-1 text-gray-500 dark:text-gray-400">
+<span class="material-symbols-outlined">group</span>
+<p class="text-xs">Contacts</p>
+</div>
+<div class="flex flex-col items-center gap-1 text-gray-500 dark:text-gray-400">
+<span class="material-symbols-outlined">settings</span>
+<p class="text-xs">Settings</p>
+</div>
+</div>
+</div>
+</body></html>

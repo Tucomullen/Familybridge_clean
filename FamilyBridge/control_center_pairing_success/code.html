@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FamilyBridge - Connection Confirmed</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ff7e67",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101c22",
+                        "warm-gray": "#617c89",
+                        "dark-text": "#111618",
+                        "light-gray": "#f0f3f4"
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .confetti {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #ffcc00;
+            border-radius: 50%;
+            animation: confetti-fall 2s ease-out forwards;
+            opacity: 0;
+        }
+
+        @keyframes confetti-fall {
+            0% {
+                transform: translateY(-100px) rotateZ(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(200px) rotateZ(360deg);
+                opacity: 0;
+            }
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="flex flex-col items-center justify-center flex-grow p-4 @container">
+<div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+<div class="confetti" style="left: 10%; animation-delay: 0s;"></div>
+<div class="confetti" style="left: 20%; animation-delay: 0.2s; background-color: #13a4ec;"></div>
+<div class="confetti" style="left: 30%; animation-delay: 0.4s; background-color: #ff7e67;"></div>
+<div class="confetti" style="left: 40%; animation-delay: 0.6s;"></div>
+<div class="confetti" style="left: 50%; animation-delay: 0.8s; background-color: #13a4ec;"></div>
+<div class="confetti" style="left: 60%; animation-delay: 1s;"></div>
+<div class="confetti" style="left: 70%; animation-delay: 1.2s; background-color: #ff7e67;"></div>
+<div class="confetti" style="left: 80%; animation-delay: 1.4s; background-color: #13a4ec;"></div>
+<div class="confetti" style="left: 90%; animation-delay: 1.6s;"></div>
+</div>
+<div class="flex w-full flex-col gap-8 items-center max-w-md text-center">
+<div class="flex gap-4 flex-col items-center">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full min-h-32 w-32" data-alt="A portrait of Grandma Jean, smiling warmly." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDFiAxoJ4a9krEqdEZPzXOgG-xfUPaiSiW_J_9ErpmHKsoJiJC5iwHGuSqAuE-xCGJ3UOQqAGE6YAqwJyEr6-LHewEKSTPCYmMs8RyXJ7sCk3UeX3vrT7APUM3gI-S2Y26LxHzqDfDCCmQKdpI8tQszFWwamogcuF6ablEWwBAgoQLLJq1Fbybm7y4abHHsdEbmRpZDeO2B3yjo6-S1kWEpx_9XjCM9B0xQSxIRp7Kt53vlrslpeZlImWzAbd-u95I9m0HtodmYpv4");'></div>
+<div class="flex flex-col items-center justify-center">
+<p class="text-dark-text dark:text-white text-3xl font-bold leading-tight tracking-tight">You're now connected to Grandma Jean</p>
+<p class="text-warm-gray dark:text-gray-300 text-lg font-normal leading-normal mt-2">Let's help them get started.</p>
+</div>
+</div>
+<div class="flex flex-1 gap-3 max-w-[480px] flex-col items-stretch px-4 py-3 w-full">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-14 px-5 bg-primary text-white text-lg font-bold leading-normal tracking-[0.015em] w-full shadow-lg hover:bg-opacity-90 transition-colors">
+<span class="truncate">Continue to Setup</span>
+</button>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-14 px-5 bg-light-gray dark:bg-gray-700 text-dark-text dark:text-white text-lg font-bold leading-normal tracking-[0.015em] w-full hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
+<span class="truncate">Add another family member</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</body></html>

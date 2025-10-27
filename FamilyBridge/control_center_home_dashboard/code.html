@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FamilyBridge Home</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#ec6d13",
+            "background-light": "#f8f7f6",
+            "background-dark": "#221810",
+          },
+          fontFamily: {
+            "display": ["Manrope"]
+          },
+          borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-10">
+<div class="text-[#181411] dark:text-white flex size-12 shrink-0 items-center">
+<span class="material-symbols-outlined text-3xl">family_restroom</span>
+</div>
+<h2 class="text-[#181411] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">FamilyBridge</h2>
+<div class="flex w-12 items-center justify-end">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 bg-transparent text-[#181411] dark:text-white gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+</div>
+</div>
+<div class="flex-grow">
+<div class="p-4 @container">
+<div class="flex w-full flex-col gap-4 rounded-xl bg-white dark:bg-background-dark border border-[#e6e0db] dark:border-gray-700 p-6 shadow-sm">
+<div class="flex items-center gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-24 w-24 ring-4 ring-green-500" data-alt="Photo of Grandma Jean" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDtT5BSJ0VLk-0GvY80AOuBp4o8cqhnT-RJtf9rfGvNmaRjO1gsO0uKLCumaAgXdRV0TNR_V_2EAuE49Pyzxhm0FojwThZPXP9VeYkH0dQUnmaIj8wH_w2wnrU7NsOM1cmfOXSs8Zam9_KEclMIrBdef2oFGwlIVu3GbEusooDCha7sgxAZXCS7CCPHa_N53Q6PoZ7KhWL3gTkH0FcV_otxsaCJYxdXJQr7zZ6EyUuU1EkEoeDxpOa_zhblKsVDdY3cpY4SqCVuv-w");'></div>
+<div class="flex flex-col justify-center">
+<p class="text-[#181411] dark:text-white text-2xl font-bold leading-tight tracking-[-0.015em]">Grandma Jean</p>
+<div class="flex items-center gap-2 mt-1">
+<span class="w-3 h-3 rounded-full bg-green-500"></span>
+<p class="text-green-500 text-base font-medium leading-normal">Online</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4 p-4">
+<div class="flex flex-1 gap-3 rounded-xl border border-[#e6e0db] dark:border-gray-700 bg-white dark:bg-background-dark p-4 flex-col items-center justify-center aspect-square text-center">
+<div class="text-primary text-3xl">
+<span class="material-symbols-outlined text-4xl">settings</span>
+</div>
+<div class="flex flex-col gap-1">
+<h2 class="text-[#181411] dark:text-white text-base font-bold leading-tight">Configuration</h2>
+<p class="text-[#897261] dark:text-gray-400 text-sm font-normal leading-normal">Manage app settings</p>
+</div>
+</div>
+<div class="flex flex-1 gap-3 rounded-xl border border-[#e6e0db] dark:border-gray-700 bg-white dark:bg-background-dark p-4 flex-col items-center justify-center aspect-square text-center">
+<div class="text-primary text-3xl">
+<span class="material-symbols-outlined text-4xl">favorite</span>
+</div>
+<div class="flex flex-col gap-1">
+<h2 class="text-[#181411] dark:text-white text-base font-bold leading-tight">Activity</h2>
+<p class="text-[#897261] dark:text-gray-400 text-sm font-normal leading-normal">View health data</p>
+</div>
+</div>
+<div class="flex flex-1 gap-3 rounded-xl border border-[#e6e0db] dark:border-gray-700 bg-white dark:bg-background-dark p-4 flex-col items-center justify-center aspect-square text-center">
+<div class="text-primary text-3xl">
+<span class="material-symbols-outlined text-4xl">lightbulb</span>
+</div>
+<div class="flex flex-col gap-1">
+<h2 class="text-[#181411] dark:text-white text-base font-bold leading-tight">Insights</h2>
+<p class="text-[#897261] dark:text-gray-400 text-sm font-normal leading-normal">Get smart summaries</p>
+</div>
+</div>
+<div class="flex flex-1 gap-3 rounded-xl border border-[#e6e0db] dark:border-gray-700 bg-white dark:bg-background-dark p-4 flex-col items-center justify-center aspect-square text-center">
+<div class="text-primary text-3xl">
+<span class="material-symbols-outlined text-4xl">visibility</span>
+</div>
+<div class="flex flex-col gap-1">
+<h2 class="text-[#181411] dark:text-white text-base font-bold leading-tight">Preview</h2>
+<p class="text-[#897261] dark:text-gray-400 text-sm font-normal leading-normal">See the senior's app</p>
+</div>
+</div>
+</div>
+</div>
+<div class="flex gap-2 border-t border-[#f4f2f0] dark:border-gray-800 bg-background-light dark:bg-background-dark px-4 pb-3 pt-2 sticky bottom-0">
+<a class="just flex flex-1 flex-col items-center justify-end gap-1 rounded-full text-primary" href="#">
+<div class="text-primary flex h-8 items-center justify-center">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">home</span>
+</div>
+<p class="text-primary text-xs font-medium leading-normal tracking-[0.015em]">Home</p>
+</a>
+<a class="just flex flex-1 flex-col items-center justify-end gap-1 text-[#897261] dark:text-gray-400" href="#">
+<div class="text-[#897261] dark:text-gray-400 flex h-8 items-center justify-center">
+<span class="material-symbols-outlined">email</span>
+</div>
+<p class="text-[#897261] dark:text-gray-400 text-xs font-medium leading-normal tracking-[0.015em]">Messages</p>
+</a>
+<a class="just flex flex-1 flex-col items-center justify-end gap-1 text-[#897261] dark:text-gray-400" href="#">
+<div class="text-[#897261] dark:text-gray-400 flex h-8 items-center justify-center">
+<span class="material-symbols-outlined">notifications</span>
+</div>
+<p class="text-[#897261] dark:text-gray-400 text-xs font-medium leading-normal tracking-[0.015em]">Alerts</p>
+</a>
+</div>
+</div>
+</body></html>
